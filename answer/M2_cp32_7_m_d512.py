@@ -93,7 +93,9 @@ print 'Y_train shape:', Y_train.shape
 test_fns = [fn for fn in listdir(dataset_path) if isfile(join(dataset_path, fn)) & fn.startswith("test_batch")]
 
 # read testing data
+fn = test_fns[0]
 raw_data = unpickle(dataset_path + fn)
+print 'testing file ', dataset_path + fn
 
 # type of raw data
 type(raw_data)
@@ -167,8 +169,10 @@ fit_log = model.fit(X_train, Y_train, batch_size=batch_size,
 	                nb_epoch=epoch, validation_data=(X_test, Y_test), shuffle=True)
 
 '''saving training history'''
+output_fn = 'M3_cp32_7_m_d512'
+
 import csv
-history_fn = 'c32_7_m_d512.csv'
+history_fn = output_fn + '.csv'
 with open(history_fn, 'wb') as csv_file:
 	w = csv.writer(csv_file)
 	temp = numpy.array(fit_log.history.values())
@@ -178,11 +182,11 @@ with open(history_fn, 'wb') as csv_file:
 
 '''saving model'''
 from keras.models import load_model
-model.save('c32_7_m_d512.h5')
+model.save(output_fn + '.h5')
 del model
 
 '''loading model'''
-model = load_model('c32_7_m_d512.h5')
+model = load_model(output_fn + '.h5')
 
 '''prediction'''
 pred = model.predict_classes(X_test, batch_size, verbose=0)
