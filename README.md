@@ -15,6 +15,6 @@
 * 各位學員非常抱歉。之前 answer 內的 sample codes 有 bug 導致 testing file 並沒有正確讀入。目前已將 codes 更新，並增加了 M4。
 * 更新投影片的 validadtion loss & accuracy plot 並放置在 answer 資料夾內
 
-## 六組 dataset 的 CNN 模型排行榜
+## 參考資料
 * [Dataset (MNIST, CIFAR-10, CIFAR-100, STL-10, SVHN, ILSVRC2012 task 1) CNN 模型排行榜](http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html)
 
