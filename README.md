@@ -16,5 +16,5 @@
 * 更新投影片的 validadtion loss & accuracy plot 並放置在 answer 資料夾內
 
 ## Reference
-* [CNN 模型排行榜](http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html)
+* [Dataset (MNIST, CIFAR-10, CIFAR-100, STL-10, SVHN, ILSVRC2012 task 1) CNN 模型排行榜](http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html)
 
