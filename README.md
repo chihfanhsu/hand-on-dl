@@ -12,5 +12,5 @@
 * https://www.youtube.com/watch?v=wjByPfSFkBo
 
 ## 程式更新
-* 我向各位學員道歉。之前 answer 內的 sample code 有 bug 導致 testing file 並沒有正確讀入。目前已將 code 已更新，並更新了 M4。
+* 我向各位學員道歉。之前 answer 內的 sample code 有 bug 導致 testing file 並沒有正確讀入。目前已將 code 已更新，並增加了 M4。
 * 更新投影片的 validadtion loss & accuracy plot
