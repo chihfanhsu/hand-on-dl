@@ -169,7 +169,7 @@ fit_log = model.fit(X_train, Y_train, batch_size=batch_size,
 	                nb_epoch=epoch, validation_data=(X_test, Y_test), shuffle=True)
 
 '''saving training history'''
-output_fn = 'M3_cp32_3_m_d512'
+output_fn = 'M1_cp32_3_m_d512'
 
 import csv
 history_fn = output_fn + '.csv'
