@@ -3,7 +3,7 @@
 1. 請依據[安裝步驟](https://github.com/chihfanhsu/dnn_hand_by_hand/blob/master/cnn_preDL.pdf)事先下載課程資料
 2. 如果 checkblas.py 執行時有錯誤訊息請安裝 [openBLAS](https://github.com/chihfanhsu/dnn_hand_by_hand/blob/master/openblas_install.pdf)
 
-# GPU 安裝
+# GPU 安裝 (需要 NVIDIA 顯示卡)
 ## 在 Windows 10 安裝 CUDA & cuDNN 可以參考下列網址
 1. http://ankivil.com/installing-keras-theano-and-dependencies-on-windows-10/
 2. http://ankivil.com/making-theano-faster-with-cudnn-and-cnmem-on-windows-10/
