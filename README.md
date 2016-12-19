@@ -7,8 +7,8 @@
 GPU
 ------
 在 Windows 10 安裝 cuda & cuDNN 可以參考下列網址
-http://ankivil.com/installing-keras-theano-and-dependencies-on-windows-10/
-http://ankivil.com/making-theano-faster-with-cudnn-and-cnmem-on-windows-10/
+1. http://ankivil.com/installing-keras-theano-and-dependencies-on-windows-10/
+2. http://ankivil.com/making-theano-faster-with-cudnn-and-cnmem-on-windows-10/
 
 在 ubuntu 上安裝可以參考下列影片，建議安裝 CUDA7.5
-https://www.youtube.com/watch?v=wjByPfSFkBo
+* https://www.youtube.com/watch?v=wjByPfSFkBo
