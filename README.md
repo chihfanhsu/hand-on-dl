@@ -10,8 +10,8 @@
 ## 在 ubuntu 上安裝可以參考下列影片，建議安裝 CUDA 7.5
 * https://www.youtube.com/watch?v=wjByPfSFkBo
 
-# 沒有 GPU 的折衷方案 (openBLAS CPU 運算加速)
-* 如果 checkblas.py 執行時有錯誤訊息請安裝 [openBLAS](https://github.com/chihfanhsu/dnn_hand_by_hand/blob/master/openblas_install.pdf)  
+# Windows 10 沒有 GPU 的折衷方案 (openBLAS CPU 運算加速)
+* 請安裝 [openBLAS](https://github.com/chihfanhsu/dnn_hand_by_hand/blob/master/openblas_install.pdf)  
 
 ## 程式更新
 * 各位學員非常抱歉。之前 answer 內的 sample codes 有 bug 導致 testing file 並沒有正確讀入。目前已將 codes 更新，並增加了 M4。
