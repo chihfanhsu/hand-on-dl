@@ -20,3 +20,6 @@
 ## 參考資料
 * [Dataset (MNIST, CIFAR-10, CIFAR-100, STL-10, SVHN, ILSVRC2012 task 1) CNN 模型排行榜](http://rodrigob.github.io/are_we_there_yet/build/classification_datasets_results.html)
 
+## Slides
+* http://www.slideshare.net/tw_dsconf/ss-70083878
+
