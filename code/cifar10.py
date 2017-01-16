@@ -1,3 +1,4 @@
+# coding=utf-8
 # libraries & packages
 import numpy
 import math
@@ -132,6 +133,13 @@ print 'Y_test shape:', Y_test.shape
 '''CNN model'''
 model = Sequential()
 # 請建立一個 CNN model
+
+# CNN
+
+model.add(Flatten())
+
+#DNN
+
 
 '''setting optimizer'''
 learning_rate = 0.01
