@@ -14,8 +14,11 @@
 # 沒有 GPU 的折衷方案 (Windows 10, OpenBLAS CPU 加速)
 * 請參照[預先下載](https://github.com/chihfanhsu/hand-on-dl/blob/master/cnn_preDL.pdf)的第四步驟進行安裝
 
-## 程式更新
-* 暫無更新
+## 使用 library
+* pip(3) install pillow
+* pip(3) install scipy
+* pip(3) install numpy
+* pip(3) install h5py
 
 ## Python2 vs. Python3
 * Python3 需將 print function ，添加上左右括號
