@@ -6,7 +6,7 @@
 ## Anaconda3-4.3.1 安裝 (Windows 10, tensorflow)
 * 安裝 anaconda3-4.3.1
 * 使用管理者權限開啟 anaconda prompt
-*--以下都在 anaconda prompt 下
+* (以下都在 anaconda prompt 下)
 * 輸入 conda create -n tensorflow python=3.5
 * 輸入 activate tensorflow
 * 輸入 pip install tensorflow-gpu
