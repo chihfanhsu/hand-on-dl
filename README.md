@@ -3,8 +3,8 @@
 * 請安裝 [Anaconda 2.7 或 Anaconda3-4.3.1](https://www.continuum.io/downloads)
 * 請依據[預先下載](https://github.com/chihfanhsu/dnn_hand_by_hand/blob/master/cnn_preDL.pdf)事先下載課程資料
 
-## Anaconda3-4.3.1 安裝 (Windows 10)
-* 安裝 anaconda 4.3.1
+## Anaconda3-4.3.1 安裝 (Windows 10, tensorflow)
+* 安裝 anaconda3-4.3.1
 * 使用管理者權限開啟 anaconda prompt
 *--以下都在 anaconda prompt 下
 * 輸入 conda create -n tensorflow python=3.5
@@ -28,6 +28,9 @@ print (sess.run(c))
 ```python
 import keras
 ``` 
+## Anaconda2 安裝 (Windows 10, theano)
+* 請依據 [安裝流程](https://github.com/chihfanhsu/dnn_hand_by_hand/blob/master/cnn_preDL.pdf) 進行安裝。
+
 # GPU 安裝 (需要 NVIDIA 顯示卡)
 ## 在 Windows 10 安裝 CUDA & cuDNN 可以參考下列網址
 1. [安裝 CUDA&Theano](http://ankivil.com/installing-keras-theano-and-dependencies-on-windows-10/)
