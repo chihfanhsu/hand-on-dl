@@ -4,13 +4,13 @@
 * 請依據[預先下載](https://github.com/chihfanhsu/dnn_hand_by_hand/blob/master/cnn_preDL.pdf)事先下載課程資料
 
 ## Anaconda3-4.3.1 安裝 (Windows 10)
-1. 安裝 anaconda 4.3.1
-2. 使用管理者權限開啟 anaconda prompt
---以下都在 anaconda prompt 下
-2.1 輸入 conda create -n tensorflow python=3.5
-2.2 輸入 activate tensorflow
-2.3 輸入 pip install tensorflow-gpu
-2.4 在 python 內利用此程式測試：
+* 安裝 anaconda 4.3.1
+* 使用管理者權限開啟 anaconda prompt
+*--以下都在 anaconda prompt 下
+* 輸入 conda create -n tensorflow python=3.5
+* 輸入 activate tensorflow
+* 輸入 pip install tensorflow-gpu
+* 在 python 內利用此程式測試：
 ```python
 import tensorflow as tf
 # Creates a graph.
@@ -22,9 +22,9 @@ sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 # Runs the op.
 print (sess.run(c))
 ```
-2.5 輸入 conda install numpy scipy mingw libpython
-2.6 輸入 pip install keras
-2.7 在 python 內測試 keras:
+* 輸入 conda install numpy scipy mingw libpython
+* 輸入 pip install keras
+* 在 python 內測試 keras:
 ```python
 import keras
 ``` 
