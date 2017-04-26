@@ -1,8 +1,33 @@
 # 手把手的深度學習實務
 ## 預先下載
-* 請安裝 [Anaconda 2.7](https://www.continuum.io/downloads)
+* 請安裝 [Anaconda 2.7 或 Anaconda3-4.3.1](https://www.continuum.io/downloads)
 * 請依據[預先下載](https://github.com/chihfanhsu/dnn_hand_by_hand/blob/master/cnn_preDL.pdf)事先下載課程資料
 
+## Anaconda3-4.3.1 安裝 (Windows 10)
+1. 安裝 anaconda 4.3.1
+2. 使用管理者權限開啟 anaconda prompt
+--以下都在 anaconda prompt 下
+2.1 輸入 conda create -n tensorflow python=3.5
+2.2 輸入 activate tensorflow
+2.3 輸入 pip install tensorflow-gpu
+2.4 在 python 內利用此程式測試：
+```python
+import tensorflow as tf
+# Creates a graph.
+a = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], shape=[2, 3], name='a')
+b = tf.constant([1.0, 2.0, 3.0, 4.0, 5.0, 6.0], shape=[3, 2], name='b')
+c = tf.matmul(a, b)
+# Creates a session with log_device_placement set to True.
+sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+# Runs the op.
+print (sess.run(c))
+```
+2.5 輸入 conda install numpy scipy mingw libpython
+2.6 輸入 pip install keras
+2.7 在 python 內測試 keras:
+```python
+import keras
+``` 
 # GPU 安裝 (需要 NVIDIA 顯示卡)
 ## 在 Windows 10 安裝 CUDA & cuDNN 可以參考下列網址
 1. [安裝 CUDA&Theano](http://ankivil.com/installing-keras-theano-and-dependencies-on-windows-10/)
