@@ -22,7 +22,7 @@ sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 # Runs the op.
 print (sess.run(c))
 ```
-* 輸入 conda install numpy scipy mingw libpython
+* 輸入 conda install numpy scipy mingw libpython 
 * 輸入 pip install keras
 * 在 python 內測試 keras:
 ```python
@@ -40,10 +40,12 @@ import keras
 * 請參照[預先下載](https://github.com/chihfanhsu/hand-on-dl/blob/master/cnn_preDL.pdf)的第四步驟進行安裝
 
 ## 使用 library
-* pip(3) install pillow
 * pip(3) install scipy
 * pip(3) install numpy
-* pip(3) install h5py
+* pip(3) install mingw
+* pip(3) install libpython
+* pip(3) install pillow (繪圖用)
+* pip(3) install h5py (儲存 model)
 
 ## Python2 vs. Python3
 * Python3 需將 print function ，添加上左右括號
