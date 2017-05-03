@@ -9,7 +9,8 @@
 * （以下都在 anaconda prompt 下）
 * 輸入 conda create -n tensorflow python=3.5
 * 輸入 activate tensorflow
-* 輸入 pip install tensorflow-gpu
+* （二擇一）輸入 pip install tensorflow (有 CUDA 支援的GPU)
+* （二擇一）輸入 pip install tensorflow-gpu (無 CUDA 支援的GPU)
 * 在 python 內利用此程式測試：
 ```python
 import tensorflow as tf
