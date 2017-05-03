@@ -35,9 +35,9 @@ import keras
 * 使用管理者權限開啟 anaconda prompt
 * (以下都在 anaconda prompt 下)。
 * 輸入 conda install numpy scipy mingw libpython theano
-* 設定 Theano configuration (路徑C:\Users\[USER NAME]\.theanorc.txt)
+* 設定 Theano configuration (路徑C:\Users\\[USER NAME]\\.theanorc.txt)
 * 輸入 pip install keras
-* 設定 Keras configuration (路徑C:\Users\[USER NAME]\.keras\keras.json)，第一次安裝要先在 python 底下輸入 import keras，才會自動產生。
+* 設定 Keras configuration (路徑C:\Users\\[USER NAME]\\.keras\keras.json)，第一次安裝要先在 python 底下輸入 import keras，才會自動產生。
 * (configuration 設定內容請參考 [windows_setup.pdf](https://github.com/chihfanhsu/hand-on-dl/blob/master/windows_setup.pdf))
 * 請試跑[CNN 測試程式](https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py )
 
