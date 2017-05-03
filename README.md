@@ -1,7 +1,7 @@
 # 手把手的深度學習實務
 ## 預先下載
 * 請安裝 [Anaconda2-4.3.1 或 Anaconda3-4.3.1](https://www.continuum.io/downloads)
-* 預先下載[課程資料集 CIFAR-10 python version](https://www.cs.toronto.edu/~kriz/cifar.html)與[練習程式碼](https://github.com/chihfanhsu/hand-on-dl/)
+* 預先下載[課程資料集 CIFAR-10 python version](https://www.cs.toronto.edu/~kriz/cifar.html)與[練習程式碼](https://drive.google.com/uc?id=0By9xOgk3An1wcFVCek9rSTIyQTA&export=download)
 
 ## Anaconda3-4.3.1 安裝 (Windows 10, tensorflow)
 * 安裝 anaconda3-4.3.1
