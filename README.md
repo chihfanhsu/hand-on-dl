@@ -47,9 +47,10 @@ import keras
 * pip(3) install numpy
 * pip(3) install mingw
 * pip(3) install libpython
-* pip(3) install pillow (繪圖用)
+* pip(3) install pillow (存圖用)
 * pip(3) install h5py (儲存 model)
-
+* pip(3) install future
+* pip(3) install matplotlib
 ## Python2 vs. Python3
 * Python3 需將 print function ，添加上左右括號
 ```python
