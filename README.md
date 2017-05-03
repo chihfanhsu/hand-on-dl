@@ -1,14 +1,12 @@
 # 手把手的深度學習實務
 ## 預先下載
-* 請安裝 [Anaconda 2.7 或 Anaconda3-4.3.1](https://www.continuum.io/downloads)
-* 預先下載[課程資料集 CIFAR-10 python version](https://www.cs.toronto.edu/~kriz/cifar.html)與[練習 code](https://github.com/chihfanhsu/hand-on-dl/)
-
-* 請依據[預先下載](https://github.com/chihfanhsu/dnn_hand_by_hand/blob/master/cnn_preDL.pdf)事先下載課程資料
+* 請安裝 [Anaconda2-4.3.1 或 Anaconda3-4.3.1](https://www.continuum.io/downloads)
+* 預先下載[課程資料集 CIFAR-10 python version](https://www.cs.toronto.edu/~kriz/cifar.html)與[練習程式碼](https://github.com/chihfanhsu/hand-on-dl/)
 
 ## Anaconda3-4.3.1 安裝 (Windows 10, tensorflow)
 * 安裝 anaconda3-4.3.1
 * 使用管理者權限開啟 anaconda prompt
-* (以下都在 anaconda prompt 下)
+* （以下都在 anaconda prompt 下）
 * 輸入 conda create -n tensorflow python=3.5
 * 輸入 activate tensorflow
 * 輸入 pip install tensorflow-gpu
@@ -34,27 +32,27 @@ import keras
 * 安裝 anaconda2-4.3.1
 * 使用管理者權限開啟 anaconda prompt
 * 在 anaconda prompt 下，輸入 conda install numpy scipy mingw libpython theano
-* (設定 configuration 設定內容請參考 [windows_setup.pdf](https://github.com/chihfanhsu/hand-on-dl/blob/master/windows_setup.pdf))
+* （設定 configuration，設定內容請參考 [windows_setup.pdf](https://github.com/chihfanhsu/hand-on-dl/blob/master/windows_setup.pdf)）
 * 設定 Theano configuration (路徑C:\Users\\[USER NAME]\\.theanorc.txt)
 * 輸入 pip install keras
 * 設定 Keras configuration (路徑C:\Users\\[USER NAME]\\.keras\keras.json)，第一次安裝要先在 python 底下輸入 import keras，才會自動產生。
-* (添加 Windows 環境變數)
+* （添加 Windows 環境變數）
 * PYTHONPATH：C:\Anaconda2\Lib\site-packages\theano
 * PATH：C:\Anaconda2\MinGW\bin;C:\Anaconda2\MinGW\x86_64-w64-mingw32\lib
 * 請試跑[CNN 測試程式](https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py )
 
 # GPU 安裝 (需要 NVIDIA 顯示卡)
-## 在 Windows 10 安裝 CUDA & cuDNN 可以參考下列網址
+## 在 Windows 10 安裝 CUDA8.0 & cuDNN5.1 可以參考下列網址
 1. [安裝 CUDA&Theano](http://ankivil.com/installing-keras-theano-and-dependencies-on-windows-10/)
 2. [安裝 cuDNN](http://ankivil.com/making-theano-faster-with-cudnn-and-cnmem-on-windows-10/)
 
-## 在 ubuntu 上安裝可以參考下列影片，建議安裝 CUDA 7.5
+## 在 ubuntu 上安裝可以參考下列影片
 * https://www.youtube.com/watch?v=wjByPfSFkBo
 
 # 沒有 GPU 的折衷方案 (Windows 10, OpenBLAS CPU 加速)
-* 請參照[預先下載](https://github.com/chihfanhsu/hand-on-dl/blob/master/cnn_preDL.pdf)的第四步驟進行安裝
+* 請參照[windows_setup.pdf](https://github.com/chihfanhsu/hand-on-dl/blob/master/windows_setup.pdf)的 5. 進行安裝
 
-## 使用 library
+## 需要的 libraries
 * pip(3) install scipy
 * pip(3) install numpy
 * pip(3) install mingw
@@ -63,6 +61,7 @@ import keras
 * pip(3) install h5py (儲存 model)
 * pip(3) install future
 * pip(3) install matplotlib
+
 ## Python2 vs. Python3
 * Python3 需將 print function ，添加上左右括號
 ```python
