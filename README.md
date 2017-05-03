@@ -39,6 +39,9 @@ import keras
 * 輸入 pip install keras
 * 設定 Keras configuration (路徑C:\Users\\[USER NAME]\\.keras\keras.json)，第一次安裝要先在 python 底下輸入 import keras，才會自動產生。
 * (configuration 設定內容請參考 [windows_setup.pdf](https://github.com/chihfanhsu/hand-on-dl/blob/master/windows_setup.pdf))
+* 添加 Windows 環境變數
+**PYTHONPATH：C:\Anaconda2\Lib\site-packages\theano;
+**PATH：C:\Anaconda2\MinGW\bin;C:\Anaconda2\MinGW\x86_64-w64-mingw32\lib
 * 請試跑[CNN 測試程式](https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py )
 
 # GPU 安裝 (需要 NVIDIA 顯示卡)
