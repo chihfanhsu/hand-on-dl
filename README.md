@@ -9,8 +9,8 @@
 * （以下都在 anaconda prompt 下）
 * 輸入 conda create -n tensorflow python=3.5
 * 輸入 activate tensorflow
-* （二擇一）輸入 pip install tensorflow (有 CUDA 支援的GPU)
-* （二擇一）輸入 pip install tensorflow-gpu (無 CUDA 支援的GPU)
+* （二擇一）輸入 pip install tensorflow (無 CUDA 支援的 GPU)
+* （二擇一）輸入 pip install tensorflow-gpu (有 CUDA 支援的 GPU)
 * 在 python 內利用此程式測試：
 ```python
 import tensorflow as tf
@@ -40,7 +40,7 @@ import keras
 * （添加 Windows 環境變數）
 * PYTHONPATH：C:\Anaconda2\Lib\site-packages\theano
 * PATH：C:\Anaconda2\MinGW\bin;C:\Anaconda2\MinGW\x86_64-w64-mingw32\lib
-* 請試跑[CNN 測試程式](https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py )
+* 請試跑 [CNN 測試程式](https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py )
 
 # GPU 安裝 (需要 NVIDIA 顯示卡)
 ## 在 Windows 10 安裝 CUDA8.0 & cuDNN5.1 可以參考下列網址
@@ -51,7 +51,7 @@ import keras
 * https://www.youtube.com/watch?v=wjByPfSFkBo
 
 # 沒有 GPU 的折衷方案 (Windows 10, OpenBLAS CPU 加速)
-* 請參照[windows_setup.pdf](https://github.com/chihfanhsu/hand-on-dl/blob/master/windows_setup.pdf)的 5. 進行安裝
+* 請參照 [windows_setup.pdf] (https://github.com/chihfanhsu/hand-on-dl/blob/master/windows_setup.pdf)的 5. 進行安裝
 
 ## 需要的 libraries
 * pip(3) install scipy
