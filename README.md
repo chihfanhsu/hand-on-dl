@@ -1,6 +1,8 @@
 # 手把手的深度學習實務
 ## 預先下載
 * 請安裝 [Anaconda 2.7 或 Anaconda3-4.3.1](https://www.continuum.io/downloads)
+* 預先下載[課程資料集 CIFAR-10 python version](https://www.cs.toronto.edu/~kriz/cifar.html)與[練習 code](https://github.com/chihfanhsu/hand-on-dl/)
+
 * 請依據[預先下載](https://github.com/chihfanhsu/dnn_hand_by_hand/blob/master/cnn_preDL.pdf)事先下載課程資料
 
 ## Anaconda3-4.3.1 安裝 (Windows 10, tensorflow)
@@ -28,8 +30,18 @@ print (sess.run(c))
 ```python
 import keras
 ``` 
-## Anaconda2 安裝 (Windows 10, theano)
-* 請依據 [安裝流程](https://github.com/chihfanhsu/dnn_hand_by_hand/blob/master/cnn_preDL.pdf) 進行安裝。
+## Anaconda2-4.3.1 安裝 (Windows 10, theano)
+* 安裝 anaconda2-4.3.1
+* 使用管理者權限開啟 anaconda prompt
+* (以下都在 anaconda prompt 下)。
+* 輸入 conda install numpy scipy mingw libpython theano
+* 設定 Theano configuration (路徑C:\Users\[USER NAME]\.theanorc.txt)
+* 輸入 pip install keras
+* 設定 Keras configuration (路徑C:\Users\[USER NAME]\.keras\keras.json)，第一次安裝要先在 python 底下輸入 import keras，才會自動產生。
+* 請試跑[CNN 測試程式](https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py )
+
+
+
 
 # GPU 安裝 (需要 NVIDIA 顯示卡)
 ## 在 Windows 10 安裝 CUDA & cuDNN 可以參考下列網址
