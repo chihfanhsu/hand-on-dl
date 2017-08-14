@@ -4,22 +4,24 @@ import math
 import sys
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Activation, Flatten
-from keras.layers import Conv2D, MaxPooling2D
+from keras.layers import Convolution2D, MaxPooling2D
 from keras.optimizers import SGD
 from keras.utils import np_utils
+import utils
 
 # set dataset path
 dataset_path = '../cifar_10/'
-execfile('read_dataset2img.py')
+classes = 10
+X_train, X_test, Y_train, Y_test = utils.read_dataset(dataset_path, "vec")
 
 '''CNN model'''
 model = Sequential()
-model.add(Conv2D(32, 3, 3, border_mode='same', input_shape=X_train[0].shape))
+model.add(Dense(512, input_shape=X_train[0].shape))
 model.add(Activation('relu'))
-model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Dropout(0.2))
-
-model.add(Flatten())
+model.add(Dense(512))
+model.add(Activation('relu'))
+model.add(Dropout(0.2))
 model.add(Dense(512))
 model.add(Activation('relu'))
 model.add(Dropout(0.5))
@@ -47,16 +49,16 @@ fit_log = model.fit(X_train, Y_train, batch_size=batch_size,
 	                nb_epoch=epoch, validation_data=(X_test, Y_test), shuffle=True)
 
 '''saving training history'''
-output_fn = 'M1_cp32_3_m_d512'
-execfile('write_csv.py')
+output_fn = 'M0_d512_512_512'
+utils.write_csv(output_fn, fit_log)
 
 '''saving model'''
-# from keras.models import load_model
-# model.save(output_fn + '.h5')
-# del model
+from keras.models import load_model
+model.save(output_fn + '.h5')
+del model
 
 '''loading model'''
-# model = load_model(output_fn + '.h5')
+model = load_model(output_fn + '.h5')
 
 '''prediction'''
 pred = model.predict_classes(X_test, batch_size, verbose=0)
@@ -65,4 +67,4 @@ ans = [numpy.argmax(r) for r in Y_test]
 # caculate accuracy rate of testing data
 acc_rate = sum(pred-ans == 0)/float(pred.shape[0])
 
-print "Accuracy rate:", acc_rate
+print ("Accuracy rate:", acc_rate)
