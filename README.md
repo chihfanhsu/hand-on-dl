@@ -50,15 +50,15 @@ import keras
 ``` 
 * 請試跑 [CNN 測試程式](https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py )
 
-# GPU 安裝 (需要 NVIDIA 顯示卡)
-## 在 Windows 10 安裝 CUDA8.0 & cuDNN5.1 可以參考下列網址
+## GPU 安裝 (需要 NVIDIA 顯示卡)
+### 在 Windows 10 安裝 CUDA8.0 & cuDNN5.1 可以參考下列網址
 1. [安裝 CUDA&Theano](http://ankivil.com/installing-keras-theano-and-dependencies-on-windows-10/)
 2. [安裝 cuDNN](http://ankivil.com/making-theano-faster-with-cudnn-and-cnmem-on-windows-10/)
 
-## 在 ubuntu 上安裝可以參考下列影片
+### 在 ubuntu 上安裝可以參考下列影片
 * https://www.youtube.com/watch?v=wjByPfSFkBo
 
-# 沒有 GPU 的折衷方案 (Windows 10, OpenBLAS CPU 加速)
+## 沒有 GPU 的折衷方案 (Windows 10, OpenBLAS CPU 加速)
 * 請參照 [windows_openblas.pdf](https://github.com/chihfanhsu/hand-on-dl/blob/master/windows_openblas.pdf) 進行安裝
 
 ## 課程額外需要的 libraries，請務必安裝
@@ -67,7 +67,7 @@ import keras
 * pip (conda) install future
 * pip (conda) install matplotlib
 
-## Python2 vs. Python3
+### Python2 vs. Python3
 * Python3 需將 print function ，添加上左右括號
 ```python
 print()
