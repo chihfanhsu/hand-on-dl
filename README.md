@@ -7,10 +7,22 @@
 * 安裝 anaconda3-4.3.1
 * 使用管理者權限開啟 anaconda prompt
 * （以下都在 anaconda prompt 下）
-* 輸入 conda create -n tensorflow python=3.5
+* 輸入
+```python
+conda create -n tensorflow python=3.5
+``` 
 * 輸入 activate tensorflow
-* （二擇一）輸入 pip install tensorflow (無 CUDA 支援的 GPU)
-* （二擇一）輸入 pip install tensorflow-gpu (有 CUDA 支援的 GPU)
+```python
+activate tensorflow
+```
+* （二擇一）無 CUDA 支援的 GPU 請輸入
+```python
+pip install tensorflow
+```
+* （二擇一）有 CUDA 支援的 GPU 請輸入
+```python
+pip install tensorflow-gpu 
+```
 * 在 python 內利用此程式測試：
 ```python
 import tensorflow as tf
@@ -29,17 +41,6 @@ print (sess.run(c))
 ```python
 import keras
 ``` 
-## Anaconda2-4.3.1 安裝 (Windows 10, theano)
-* 安裝 anaconda2-4.3.1
-* 使用管理者權限開啟 anaconda prompt
-* 在 anaconda prompt 下，輸入 conda install numpy scipy mingw libpython theano
-* （設定 configuration，設定內容請參考 [windows_setup.pdf](https://github.com/chihfanhsu/hand-on-dl/blob/master/windows_setup.pdf)）
-* 設定 Theano configuration (路徑C:\Users\\[USER NAME]\\.theanorc.txt)
-* 輸入 pip install keras
-* 設定 Keras configuration (路徑C:\Users\\[USER NAME]\\.keras\keras.json)，第一次安裝要先在 python 底下輸入 import keras，才會自動產生。
-* （添加 Windows 環境變數）
-* PYTHONPATH：C:\Anaconda2\Lib\site-packages\theano
-* PATH：C:\Anaconda2\MinGW\bin;C:\Anaconda2\MinGW\x86_64-w64-mingw32\lib
 * 請試跑 [CNN 測試程式](https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py )
 
 # GPU 安裝 (需要 NVIDIA 顯示卡)
@@ -53,15 +54,15 @@ import keras
 # 沒有 GPU 的折衷方案 (Windows 10, OpenBLAS CPU 加速)
 * 請參照 [windows_setup.pdf](https://github.com/chihfanhsu/hand-on-dl/blob/master/windows_setup.pdf) 的 5. 進行安裝
 
-## 需要的 libraries
-* pip(3) install scipy
-* pip(3) install numpy
-* pip(3) install mingw
-* pip(3) install libpython
-* pip(3) install pillow (存圖用)
-* pip(3) install h5py (儲存 model)
-* pip(3) install future
-* pip(3) install matplotlib
+## 課程需要的 libraries，請務必安裝
+* pip (conda) install scipy
+* pip (conda) install numpy
+* pip (conda) install mingw
+* pip (conda) install libpython
+* pip (conda) install pillow (存圖用)
+* pip (conda) install h5py (儲存 model)
+* pip (conda) install future
+* pip (conda) install matplotlib
 
 ## Python2 vs. Python3
 * Python3 需將 print function ，添加上左右括號
