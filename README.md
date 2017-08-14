@@ -5,13 +5,13 @@
 
 ## Anaconda3-4.3.1 安裝 (Windows 10, tensorflow)
 * 安裝 anaconda3-4.3.1
-* 使用管理者權限開啟 anaconda prompt
-* （以下都在 anaconda prompt 下）
+* 使用"管理者權限"開啟 anaconda prompt
+* （以下的輸入都在 anaconda prompt 下）
 * 輸入
 ```python
 conda create -n tensorflow python=3.5
 ``` 
-* 輸入 activate tensorflow
+* 輸入 activate tensorflow，您會看到命令列前出現 (tensorflow)
 ```python
 activate tensorflow
 ```
@@ -35,8 +35,14 @@ sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 # Runs the op.
 print (sess.run(c))
 ```
-* 輸入 conda install numpy scipy mingw libpython 
-* 輸入 pip install keras
+* 輸入 conda install numpy scipy
+```python
+conda install numpy scipy mingw libpython
+```
+* 輸入
+```python
+pip install keras
+```
 * 在 python 內測試 keras:
 ```python
 import keras
@@ -54,11 +60,7 @@ import keras
 # 沒有 GPU 的折衷方案 (Windows 10, OpenBLAS CPU 加速)
 * 請參照 [windows_setup.pdf](https://github.com/chihfanhsu/hand-on-dl/blob/master/windows_setup.pdf) 的 5. 進行安裝
 
-## 課程需要的 libraries，請務必安裝
-* pip (conda) install scipy
-* pip (conda) install numpy
-* pip (conda) install mingw
-* pip (conda) install libpython
+## 課程額外需要的 libraries，請務必安裝
 * pip (conda) install pillow (存圖用)
 * pip (conda) install h5py (儲存 model)
 * pip (conda) install future
