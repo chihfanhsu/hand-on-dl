@@ -59,7 +59,7 @@ import keras
 * https://www.youtube.com/watch?v=wjByPfSFkBo
 
 # 沒有 GPU 的折衷方案 (Windows 10, OpenBLAS CPU 加速)
-* 請參照 [windows_setup.pdf](https://github.com/chihfanhsu/hand-on-dl/blob/master/windows_setup.pdf) 的 5. 進行安裝
+* 請參照 [windows_openblas.pdf](https://github.com/chihfanhsu/hand-on-dl/blob/master/windows_openblas.pdf) 進行安裝
 
 ## 課程額外需要的 libraries，請務必安裝
 * pip (conda) install pillow (存圖用)
