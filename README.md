@@ -3,15 +3,16 @@
 * 請安裝 [Anaconda2-4.3.1 或 Anaconda3-4.3.1](https://www.continuum.io/downloads)
 * 預先下載[課程資料集 CIFAR-10 python version](https://www.cs.toronto.edu/~kriz/cifar.html)與[練習程式碼](https://drive.google.com/uc?id=0By9xOgk3An1wcFVCek9rSTIyQTA&export=download)
 
-## Anaconda3-4.3.1 安裝 (Windows 10, tensorflow)
+## Anaconda 安裝 (Windows 10, tensorflow)
 * 安裝 anaconda3-4.3.1
 * 使用"管理者權限"開啟 anaconda prompt
 * （以下的輸入都在 anaconda prompt 下）
-* 輸入
+* 建立 python 3.5 的虛擬環境，並命名為 tensorflow，您的程式都需要在此環境下執行
 ```python
 conda create -n tensorflow python=3.5
 ``` 
-* 輸入 activate tensorflow，您會看到命令列前出現 (tensorflow)
+* 輸入 activate tensorflow 進入虛擬環境，您會看到命令列前出現 (tensorflow)
+* （以下的輸入都在虛擬環境 tensorflow 下）
 ```python
 activate tensorflow
 ```
@@ -35,11 +36,11 @@ sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
 # Runs the op.
 print (sess.run(c))
 ```
-* 輸入 conda install numpy scipy
+* 安裝需要的套件
 ```python
 conda install numpy scipy mingw libpython
 ```
-* 輸入
+* 安裝 keras
 ```python
 pip install keras
 ```
