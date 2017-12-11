@@ -1,10 +1,10 @@
 # 手把手的深度學習實務
 ## 預先下載
-* 請安裝 [Anaconda2-4.3.1 或 Anaconda3-4.3.1](https://www.continuum.io/downloads)
+* 請安裝 [Anaconda3](https://www.continuum.io/downloads)
 * 預先下載[課程資料集 CIFAR-10 python version](https://www.cs.toronto.edu/~kriz/cifar.html)與[練習程式碼](https://drive.google.com/uc?id=0By9xOgk3An1wcFVCek9rSTIyQTA&export=download)
 
 ## Anaconda 安裝 (Windows 10, tensorflow)
-* 安裝 anaconda3-4.3.1
+* 安裝 anaconda3
 * 使用"管理者權限"開啟 anaconda prompt
 * （以下的輸入都在 anaconda prompt 下）
 * 建立 python 3.5 的虛擬環境，並命名為 tensorflow，您的程式都需要在此環境下執行
@@ -50,6 +50,12 @@ import keras
 ``` 
 * 請試跑 [CNN 測試程式](https://github.com/fchollet/keras/blob/master/examples/mnist_cnn.py )
 
+## 課程額外需要的 libraries，請務必安裝
+* pip (conda) install pillow (存圖用)
+* pip (conda) install h5py (儲存 model)
+* pip (conda) install future
+* pip (conda) install matplotlib
+
 ## GPU 安裝 (需要 NVIDIA 顯示卡)
 ### 在 Windows 10 安裝 CUDA8.0 & cuDNN5.1 可以參考下列網址
 1. [安裝 CUDA&Theano](http://ankivil.com/installing-keras-theano-and-dependencies-on-windows-10/)
@@ -58,20 +64,10 @@ import keras
 ### 在 ubuntu 上安裝可以參考下列影片
 * https://www.youtube.com/watch?v=wjByPfSFkBo
 
-## 沒有 GPU 的折衷方案 (Windows 10, OpenBLAS CPU 加速)
+## 沒有 GPU 的折衷方案 (Windows 10, OpenBLAS CPU 加速, 非必要)
 * 請參照 [windows_openblas.pdf](https://github.com/chihfanhsu/hand-on-dl/blob/master/windows_openblas.pdf) 進行安裝
 
-## 課程額外需要的 libraries，請務必安裝
-* pip (conda) install pillow (存圖用)
-* pip (conda) install h5py (儲存 model)
-* pip (conda) install future
-* pip (conda) install matplotlib
-
-### Python2 vs. Python3
-* Python3 需將 print function ，添加上左右括號
-```python
-print()
-```
+### Python3
 * Python3 需將 unpickle function 改為
 ```python
 def unpickle(file):
