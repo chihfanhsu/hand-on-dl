@@ -149,4 +149,3 @@ def write_csv(output_fn, fit_log):
         w.writerow(list(fit_log.history.keys()))
         for i in range(temp.shape[1]):
             w.writerow(temp[:,i])
-            print(temp[:,i])
