@@ -18,18 +18,18 @@ X_train, X_test, Y_train, Y_test = utils.read_dataset(dataset_path, "img")
 model = Sequential()
 # 請建立一個 CNN model
 # CNN
-model.add(Convolution2D(, , , border_mode=, input_shape=X_train[0].shape))
-model.add(Activation())
-model.add(MaxPooling2D(pool_size=(, )))
-model.add(Dropout())
+model.add(Convolution2D( , , , border_mode='same', input_shape=X_train[0].shape))
+model.add(Activation( ))
+model.add(MaxPooling2D(pool_size=( , )))
+model.add(Dropout( ))
 
 model.add(Flatten())
-#DNN
-model.add(Dense())
-model.add(Activation())
-model.add(Dropout())
+# DNN
+model.add(Dense( ))
+model.add(Activation( ))
+model.add(Dropout( ))
 model.add(Dense(classes))
-model.add(Activation('softmax'))
+model.add(Activation( ))
 
 '''setting optimizer'''
 learning_rate = 0.01
